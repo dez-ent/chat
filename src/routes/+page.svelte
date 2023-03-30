@@ -26,7 +26,7 @@
 </script>
 
 <div class="w-screen h-screen flex flex-col items-center justify-end">
-    <div class="flex-1 w-full p-3 h-full flex flex-col gap-3">
+    <div class="flex-1 w-full p-3 h-full flex flex-col gap-3 overflow-y-auto">
         {#each messages as message}
             <Message content={message.content} date={message.date}/>
         {/each}
